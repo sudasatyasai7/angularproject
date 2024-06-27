@@ -1,0 +1,13 @@
+<div>
+    <form (submit)="addTodo()">
+        <input type="text" id="sai" placeholder="Enter Your Task...." name="inputvalue"value="todo" [(ngModel)]="inputvalue"/>
+        <br/>
+        <br/>
+        <input type="submit" id="ajay"/>
+    </form>
+    <div *ngFor="let do of todoList">
+    <h1>{{do}}</h1>&nbsp;&nbsp;
+    <button (click)="remove(do)">Remove</button>
+    </div>
+</div>
+
